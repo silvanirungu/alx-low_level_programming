@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the variable $CFILE
-CFILE="$CFILE"
-
-# Get the output file name by replacing the .c extension with .o
-OFILE="${CFILE%.c}.o"
-
-# Compile the C code using the gcc compiler and save it in the output file
 gcc -c "$CFILE" -o "$OFILE"
