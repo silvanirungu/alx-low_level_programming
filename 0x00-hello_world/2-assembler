@@ -1,0 +1,2 @@
+#!/bin/bash
+SFILE=$(echo $CFILE | sed 's/\.c$/.s/')
