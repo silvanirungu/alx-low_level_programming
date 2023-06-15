@@ -1,7 +1,11 @@
 #!/bin/bash
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-SFILE=$(echo $CFILE | sed 's/\.c$/.s/')
+
+# Get the C file name from the variable $CFILE
+CFILE="$CFILE"
+
+# Get the output file name by replacing the .c extension with .s
+OFILE="${CFILE%.c}.s"
+
+# Generate the assembly code using the gcc compiler and save it in the output file
+gcc -S -masm=intel "$CFILE" -o "$OFILE"
+
