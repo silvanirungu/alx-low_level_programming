@@ -1,11 +1,22 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - check the code
+ * main - prints _putchar
  *
- * Return: Always 0.
+ * Description: this program prints _putchar
+ *
+ * Return:  0 means  (Success) thats i have used it
  */
+
 int main(void)
 {
-printf("_putchar\n");
+char text[9] = "_putchar";
+int i = 0;
+
+for (i = 0; i < 8; i++)
+{
+_putchar(text[i]);
+}
+_putchar('\n');
 return (0);
 }

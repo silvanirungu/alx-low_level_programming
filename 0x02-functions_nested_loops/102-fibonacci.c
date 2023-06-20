@@ -1,19 +1,24 @@
 #include <stdio.h>
+#include "main.h"
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
+ * main - Prints the add of the Fibonacci numbers
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-int a = 1, b = 2, c;
-printf("%d, %d", a, b);
-for (int i = 3; i <= 50; i++)
+int c;
+long int n1, n2, fn;
+
+n1 = 1;
+n2 = 2;
+printf("%ld, %ld", n1, n2);
+for (c = 0; c < 48; c++)
 {
-c = a + b;
-printf(", %d", c);
-a = b;
-b = c;
+fn = n1 + n2;
+printf(", %ld", fn);
+n1 = n2;
+n2 = fn;
 }
 printf("\n");
 return (0);

@@ -1,14 +1,33 @@
+#include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
+ * times_table - Prints the 9 times table
  *
- * Return: Always 0.
+ * Return: no return
  */
 void times_table(void)
 {
-int i;
-for (i = 0; i <= 9; i++)
+int a, b, op;
+
+for (a = 0; a <= 9; a++)
 {
-printf("%d * 9 = %d\n", i, i * 9);
+_putchar(48);
+for (b = 1; b <= 9; b++)
+{
+op = a * b;
+_putchar(44);
+_putchar(32);
+if (op <= 9)
+{
+_putchar(32);
+_putchar(op + 48);
+}
+else
+{
+_putchar((op / 10) + 48);
+_putchar((op % 10) + 48);
+}
+}
+_putchar('\n');
 }
 }
