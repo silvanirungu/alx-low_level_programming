@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include'main.h'
 /**
- * int _atoi(char *s) - update_value
+ * int _atoi(char *s) - convert a string to an integer
  * @s: value to be eavluated
  *Return: not
  */
@@ -24,5 +24,5 @@ result = result * 10 + (s[i] - '0');
 i++;
 }
 
-return result * sign;
+return (result *sign);
 }
