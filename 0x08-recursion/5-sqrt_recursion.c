@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* find_sqrt -  will provide the square root of a positive number.
-*_sqrt_recursion -  returns the natural square root of a number.
+*_sqrt_recursion -  will provide the square root of a positive number.
+*find_sqrt - returns the natural square root of a number.
 *@n: value to be evaluate.
 *@i: value to be evaluate.
 *Return: not.
