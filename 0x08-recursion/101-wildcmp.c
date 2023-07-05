@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*wildcmp - returns the length of a string..
+*wildcmp - compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
 *@s1: value to be evaluated.
 *@s2: value to be evaluated.
 *Return: not.
