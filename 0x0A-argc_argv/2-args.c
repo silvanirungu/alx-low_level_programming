@@ -1,17 +1,20 @@
 #include <stdio.h>
-/**
- * main - check the code
- *@argc:value to be ecaluated.
- *@argv: value to be evaluated
- * Return: Always 0.
- */
+#include "main.h"
 
-int main(int argc, char **argv)
+/**
+ * main - prints all arguments it receives
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
 {
-for (int i = 0; i < argc; i++)
+int i;
+
+for (i = 0; i < argc; i++)
 {
 printf("%s\n", argv[i]);
 }
 return (0);
 }
-
